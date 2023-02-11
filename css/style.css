@@ -1,25 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     background-color: rgb(194, 190, 191);
 }
+
 main {
     display: grid;
     place-items: center;
 }
+
 img {
     height: 100px;
     width: 100px;
 }
+
 #main_logo {
     display: grid;
     text-align: center;
     margin-bottom: 20px;
     min-height: 10vh;
 }
+
 #title {
     text-align: center;
 }
+
 section {
     display: grid;
     place-items: center;
@@ -27,6 +32,7 @@ section {
     align-items: center;
     text-align: center;
 }
+
 footer {
     display: grid;
     text-align: center;
@@ -36,16 +42,42 @@ footer {
 article>i:hover {
     font-size: 70px;
     color: rgb(223, 143, 24);
-    }
-    #title:active {
-        font-size: 40px;
-        color: rgb(228, 143, 15);
-        background-color: rgb(0, 0, 0);
-        border-radius: 100px;
-        }
+}
 
-        #main_logo:hover {
-            font-size: 40px;
-            color: blue;
-            transition: 30vw 1s ease-in-out;
-            }
+#title:active {
+    font-size: 40px;
+    color: rgb(228, 143, 15);
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
+}
+
+#main_logo:hover {
+    transform:  rotate(45deg) translateX(20vh) translateY(0vh);
+    transition: 3s ease-in-out;
+    font-size: 40px;
+    color: blue;
+
+}
+#main_logo {
+    transition:1s ease-in-out;
+    background-color: aqua;
+}
+
+@keyframes text_color {
+        0% {
+        background-color: red;
+        }
+        50% {
+        background-color: green;
+        }
+        100% {
+        background-color: blue;
+        }
+       }
+
+.picture_txt {
+    margin-top: 10px;
+    height: 20vh;
+    width: 90%;
+animation: text_color ease-in 1s infinite;
+}
